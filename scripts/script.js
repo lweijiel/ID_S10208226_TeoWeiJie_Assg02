@@ -27,6 +27,7 @@ class PhotoGallery{
       this.getImg(this.pageIndex);
     })
   }
+  // Get image from API and display 12 per page
   async getImg(index){
     this.loadMore.setAttribute('data-img', 'curated');
     const baseURL = `https://api.pexels.com/v1/curated?page=${index}&per_page=12`;
@@ -35,6 +36,7 @@ class PhotoGallery{
     this.GenerateHTML(data.photos);
     console.log(data)
   }
+  // Fetch image from API
   async fetchImages(baseURL){
     const response = await fetch(baseURL, {
       method: 'GET',
@@ -47,6 +49,7 @@ class PhotoGallery{
   return data;
   }
 
+  // Display photos from loaded data from API
   GenerateHTML(photos){
     photos.forEach(photo=>{
       const item = document.createElement('div');
@@ -60,6 +63,8 @@ class PhotoGallery{
       this.galleryDiv.appendChild(item);
     })
   }
+
+  // Search for Images in API
   async getsearchedImages(e){
     this.loadMore.setAttribute('data-img', 'search');
     e.preventDefault();
@@ -72,12 +77,16 @@ class PhotoGallery{
     console.log(data)
     e.target.reset();
   }
+
+  // Load more images from searched input
   async getMoreSearchedImages(index){
     const baseURL = `https://api.pexels.com/v1/search?query=${this.searchValueGlobal}&page=${index}&per_page=12`
     const data = await this.fetchImages(baseURL);
     this.GenerateHTML(data.photos);
     console.log(data)
   }
+
+  // Resets Page number depending on searched photos/home page photos
   loadMoreImages(e){
     let index = ++this.pageIndex;
     const loadMoreData = e.target.getAttribute('data-img');
