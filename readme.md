@@ -38,4 +38,4 @@ None of the images are downloaded from the internet.
 Media in Index.html are images fetched from Pexels API.
 
 github:
-https://github.com/lweijiel/ID_S10208226_TeoWeiJie_Assg02.git
+https://lweijiel.github.io/ID_S10208226_TeoWeiJie_Assg02/
