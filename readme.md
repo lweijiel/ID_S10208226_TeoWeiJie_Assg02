@@ -12,7 +12,7 @@ As an amatuer photographer, I want to find a platform that allows me to seek ins
 API Chosen:
 Pexels API (Free Images/Videos)- https://www.pexels.com/api/documentation/?#photos-overview
 
-Errors faced along the way:
+Testing/Errors:
 - Most of the Function requires the await keyword before they can display, so I missed the keyword and took awhile to fix my issue. Other than the await keyword, async is also important before the function.
 - Pressing the search icon (REMOVED) will not initiate the search function as there is an error getting the image from the internet. So I removed it. Users will have to press the enter key instead.
 
@@ -35,3 +35,6 @@ Media:
 Media used in Personal Gallery are taken by myself. 
 None of the images are downloaded from the internet.
 Media in Index.html are images fetched from Pexels API.
+
+github:
+https://github.com/lweijiel/ID_S10208226_TeoWeiJie_Assg02.git
