@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
 * {
   margin: 0;
@@ -65,6 +66,8 @@ a:hover #logo, a:active #logo {
 
 /* End of Header Styles */
 
+/* Gallery Style */
+
 img {
   width: 100%;
   height: 100%;
@@ -99,6 +102,10 @@ section {
   font-weight: 900;
   letter-spacing: -2px;
 }
+
+/* End of Gallery Style */
+
+/* Search Box */
 form {
   margin-top: 30px;
   width: 80%;
@@ -128,6 +135,10 @@ form ion-icon {
   opacity: 0.5;
   color: gray;
 }
+/* End of Search Box */
+
+/* Grid Format */
+
 .gallery {
   width: 100%;
   display: grid;
@@ -164,7 +175,9 @@ form ion-icon {
 .item:hover h3 {
   bottom: 0;
 }
+/* End of Grid Format */
 
+/* Load More Button */
 .load-more{
   display: inline-block;
   margin-top: 30px;
@@ -177,6 +190,8 @@ form ion-icon {
   cursor: pointer;
   font-size: 15px;
 }
+
+/* Responsive */
 @media only screen and (min-width: 900px) {
   .container {
     max-width: 1160px;
